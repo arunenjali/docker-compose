@@ -8,7 +8,6 @@ volumes:
   mysql:
   redis:
   rabbitmq:
-
 services:
   mongodb:
     image: mongodb:v1
