@@ -18,8 +18,9 @@ services:
   rabbitmq: 
     image: rabbitmq:3
     container_name: rabbitmq
-    rabbitmq_default_user: roboshop
-    rabbitmq_default_password: roboshop123
+    environment:
+      rabbitmq_default_user: roboshop
+      rabbitmq_default_password: roboshop123
   user:
     image: user:v1
     container_name: user
