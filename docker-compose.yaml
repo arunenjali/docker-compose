@@ -3,7 +3,7 @@ networks:
     driver: bridge
     name: roboshop
     external: false
-servicess:
+services:
   mongodb:
     image: mongodb:v1
-    container_name: mongdb
+    container_name: mongodb
